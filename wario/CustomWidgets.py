@@ -55,7 +55,7 @@ class GlobalSaveTabs(QtWidgets.QTabWidget):
         self.globalLayout.addRow(label, self.previewLabel)
         
         self.globalTab.setLayout(self.globalLayout)
-        self.addTab(self.globalTab, "Use Global Filename")
+        self.addTab(self.globalTab, "")#Use Global Filename")
          
         label = QtWidgets.QLabel("File Location")
         self.saveLoc = saveWidget(self, saveDialogString)
@@ -63,8 +63,8 @@ class GlobalSaveTabs(QtWidgets.QTabWidget):
             self.saveLoc.textbox.setText(settings["saveLoc" + name])
         self.customLayout.insertRow(-1, label, self.saveLoc)
         
-        self.customTab.setLayout(self.customLayout)
-        self.addTab(self.customTab, "Use Custom Filename")
+        #self.customTab.setLayout(self.customLayout)
+        #self.addTab(self.customTab, "Use Custom Filename")
         
         if "currentTab" + name in settings.keys():
             self.setCurrentIndex(settings["currentTab" + name])

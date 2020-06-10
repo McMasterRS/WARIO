@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="WARIO", # Replace with your own username
-    version="0.0.12",
+    version="0.0.22",
     author="Oliver Cook, Thomas Mudway, Ron Harwood",
     description="Pipeline backend and node development tools for WARIO",
     long_description=long_description,
