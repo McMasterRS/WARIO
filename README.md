@@ -1,3 +1,3 @@
 # WARIO backend
 
-Test package for the wario backend
+Backend for the WARIO data pipeline system
